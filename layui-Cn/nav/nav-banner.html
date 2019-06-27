@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="layui/css/layui.mobile.css" />
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="layui/layui.js"></script>
+		<title>layui导航栏</title>
+	</head>
+	<style>
+		/*媒体查询*/
+		
+		@media screen and (max-width: 770px) {
+			.layui-container {
+				padding: 0px;
+			}
+		}
+		
+		@media screen and (min-width: 1200px) {}
+		/*点选时导航栏颜色的控制及下边框时颜色的控制*/
+		.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+			background: deepskyblue;
+		}
+	</style>
+
+	<body>
+		<!--让容器百分百布局  class="layui-fluid"-->
+
+		<!--水平导航栏   容器宽度均为1170px  二级菜单可直接添加相应的class名实现   layui-this默认底部边框-->
+
+		<!--.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after  用来控制下拉边框的颜色（包括滑过）-->
+
+		<!--.layui-anim-upbit 可根据该class名修改二级菜单样式-->
+
+		<!--.layui-nav 根据该class名可修改导航栏背景等-->
+
+		<!--水平导航支持的其它背景主题有：layui-bg-cyan（藏青）、layui-bg-molv（墨绿）、layui-bg-blue（艳蓝） -->
+
+		<div class="layui-container">
+			<div class="layui-container-in">
+				<ul class="layui-nav" lay-filter="">
+					<li class="layui-nav-item">
+						<a href="">目录一</a>
+					</li>
+					<li class="layui-nav-item layui-this">
+						<a href="">目录二</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="">目录三</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="javascript:;">目录四</a>
+						<dl class="layui-nav-child">
+							<!-- 二级菜单 -->
+							<dd>
+								<a href="">移动模块</a>
+							</dd>
+							<dd>
+								<a href="">后台模版</a>
+							</dd>
+							<dd>
+								<a href="">电商平台</a>
+							</dd>
+						</dl>
+
+					</li>
+					<li class="layui-nav-item">
+						<a href="">社区</a>
+					</li>
+				</ul>
+			</div>
+			<!--用来进行栅栏格布局-->
+			<div class="layui-row">
+				<div class="layui-col-md12 tab">
+					<h2>
+						导航
+					</h2>
+				</div>
+			</div>
+		</div>
+		<script>
+			//注意：导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function() {
+				var element = layui.element;
+
+			});
+		</script>
+	</body>
+
+</html>

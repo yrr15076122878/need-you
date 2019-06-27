@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="../layui/css/layui.css" />
+		<link rel="stylesheet" href="../layui/css/layui.mobile.css" />
+		<script src="../js/jquery-1.10.2.min.js"></script>
+		<script src="../layui/layui.js"></script>
+		<title>layui导航栏</title>
+	</head>
+	<style>
+		/*媒体查询*/
+		
+		@media screen and (max-width: 770px) {
+			.layui-container {
+				padding: 0px;
+			}
+		}
+		
+		@media screen and (min-width: 1200px) {}
+		/*控制导航栏图片居中*/
+		
+		.layui-nav-img {
+			vertical-align: middle !important;
+		}
+		
+		img {
+			vertical-align: middle !important;
+		}
+		/*点选时导航栏颜色的控制及下边框时颜色的控制*/
+		.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+			background: deepskyblue;
+		}
+		.layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this{
+			background: red;
+		}
+	</style>
+
+	<body>
+		<!--让容器百分百布局  class="layui-fluid"-->
+
+		<!--水平导航栏   容器宽度均为1170px  二级菜单可直接添加相应的class名实现   layui-this默认底部边框-->
+
+		<!--.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after  用来控制下拉边框的颜色（包括滑过）-->
+
+		<!--.layui-anim-upbit 可根据该class名修改二级菜单样式-->
+
+		<!--.layui-nav 根据该class名可修改导航栏背景等-->
+
+		<!--水平导航支持的其它背景主题有：layui-bg-cyan（藏青）、layui-bg-molv（墨绿）、layui-bg-blue（艳蓝） -->
+
+		<!--可根据  https://www.layui.com/doc/element/badge.html 更改对应calss名修改徽章-->
+		<div class="layui-container">
+			<div class="layui-container-in">
+				<ul class="layui-nav">
+					<li class="layui-nav-item">
+						<a href="">控制台<span class="layui-badge">9</span></a>
+					</li>
+					<li class="layui-nav-item layui-this">
+						<!--这里用的是徽章-->
+						<a href="">个人中心<span class="layui-badge-dot"></span></a>
+					</li>
+					<li class="layui-nav-item">
+						<!--这里用的是插入图片-->
+						<a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="javascript:;">修改信息</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">安全管理</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">退出</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!--用来进行栅栏格布局-->
+			<div class="layui-row">
+				<div class="layui-col-md12 tab">
+					<h2>
+						导航
+					</h2>
+				</div>
+			</div>
+		</div>
+		<script>
+			//注意：导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function() {
+				var element = layui.element;
+			});
+		</script>
+	</body>
+
+</html>

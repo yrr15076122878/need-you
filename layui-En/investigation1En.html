@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="layui/css/layui.mobile.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/jquery-accordion-menu.css" rel="stylesheet" />
+		<link href="css/font-awesome.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/checkbix.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/checkbix.css" />
+		<link rel="stylesheet" type="text/css" href="css/Part.css" />
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="layui/layui.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/checkbix.min.js"></script>
+		<title>2019中国铸造展览会 | CHINA CAST 2019</title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default hidden-md hidden-lg" style="background: transparent; position: fixed; width: 100%; z-index: 100; border-bottom: none; border-right: none; box-shadow: none">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header" style="background-color: #fff; border-bottom: 1px solid #ccc;">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<a class="navbar-brand" href="#">导航栏</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border-bottom: none;">
+					<ul class="nav navbar-nav" style="width: 220px; background-color: #fff; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+						<li>
+							<a href='invationEn.html'><i class='fa fa-th-list'></i>Information</a>
+						</li>
+						<!--<li>
+							<a href='Fees.aspx'><i class='fa fa-file-text-o'></i>门票选项</a>
+						</li>
+						<li>
+							<a href='Payment.aspx'><i class='fa fa-credit-card'></i>付款</a>
+						</li>-->
+						<li num="2" class="active">
+							<a href="investigation1En.html"><i class="layui-icon icon-inneed"></i> QA</a>
+						</li>
+						<li>
+							<a href='confirmationEn.html'><i class='fa fa-envelope'></i>Confirmation Letter</a>
+						</li>
+						<li num="5">
+							<a href="invat.html"><i class="layui-icon icon-inneed"></i>Register for colleagues</a>
+						</li>
+						<!--<li>
+							<a href='Hotel.aspx'><i class='fa fa-glass'></i>酒店预订</a>
+						</li>
+						<li>
+							<a href='Agenda.aspx'><i class='fa fa-th'></i>会议日程</a>
+						</li>-->
+						<li>
+							<a href='Contactus.aspx'><i class='fa fa-stack-exchange'></i>Contact us</a>
+						</li>
+						<li>
+							<a href='Logout.aspx'><i class='fa fa-reply'></i>Logout</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--BannerImage-->
+		<div class="banner-images container" style="padding:0 0">
+			<img src="images/banners.jpg" alt="..." class="img-responsive center-block" style="border: 1px solid #ccc;" />
+		</div>
+		<!--Main-->
+		<!--pc侧边导航栏-->
+		<div class="layui-container container right-main mainBody" style="border: 1px solid #ccc;overflow: hidden;">
+			<!--PC Menu-->
+			<div id="jquery-accordion-menu" class="jquery-accordion-menu red col-md-3 hidden-xs hidden-sm" style="margin-top:15px;">
+				<div class="jquery-accordion-menu-header" id="form">
+					<h3 style="margin:10%">导航栏</h3>
+				</div>
+				<ul id="demo-list">
+					<li num="1">
+						<a href="invationEn.html"><i class="layui-icon icon-inneed"></i> Information</a>
+					</li>
+					<li num="2" class="active">
+						<a href="investigation1En.html"><i class="layui-icon icon-inneed"></i> QA</a>
+					</li>
+					<li num="3">
+						<a href="confirmationEn.html"><i class="layui-icon icon-inneed">&#xe655;</i>Confirmation Letter</a>
+					</li>
+					<!--<li num="4">
+						<a href=""><i class="layui-icon icon-inneed"></i> 帮同事注册</a>
+					</li>-->
+					<li num="5">
+						<a href="invat.html"><i class="layui-icon icon-inneed"></i>Register for colleagues</a>
+					</li>
+					<!--<li num="6">
+						<a href=""><i class="layui-icon icon-inneed"></i> 展品/展品预览</a>
+					</li>-->
+					<li num="7">
+						<a href=""><i class="layui-icon icon-inneed"></i> Contact us</a>
+					</li>
+					<li>
+						<a href=""><i class="layui-icon icon-inneed"></i> Logout</a>
+					</li>
+				</ul>
+				<div class="jquery-accordion-menu-footer">&nbsp;</div>
+			</div>
+			<div class="layui-col-md9 foot" style="margin-left: 0px;margin-top: 2%;">
+				<div class="col-md-12 body_t" style="border-left: 1px solid #ccc; margin-top: 17px;">
+					<div class="container col-md-9 body_t" style="border-left: 1px solid #ccc; margin-top: 17px;">
+						<h3 class="auto-centerh3"><strong>Questionnaire</strong></h3>
+						<input type="hidden" id="hd_id" value="9">
+						<label>1.Company category</label>
+						<input type="hidden" id="idList_0" value="5ad62a7d-17e8-4886-8e77-fb31d8755261"><input type="hidden" id="IsRequired_0" value="yes"><input type="hidden" id="Alert_0" value="Pls fill in Company category"><input type="hidden" id="QuestionType_0" value="duo">
+						<div class="checkbox checkbox-primary"><label><input  type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix" onclick="return false" id="check0_01" readonly="readonly" checked="checked" class="idList_0 styled" name="duo_0" value="P62">Manufacturing and processing</label></div>
+						<div class="checkbox"><label>　<input id="mycheckbox3" type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix" checked="checked" id="check0_0" checked="checked" 　onchange="showValue('duo',0,0)" 　="" name="duo_01" value="P57">Manufacturers (casting machines & auxiliary equipment)</label></div>
+						<div class="checkbox"><label>　<input id="mycheckbox4" type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix" 　onchange="showValue('duo',0,0)" name="duo_01" value="P86">Casting suppliers</label></div>
+						<div class="checkbox"><label>　<input id="mycheckbox5" type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix" 　　onchange="showValue('duo',0,0)"  name="duo_01" value="P39">Purchaser</label></div>
+						<div class="checkbox"><label>　<input  id="mycheckbox6" type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix" group="qt" name="duo_0" value="P70">Others<input type="text" name="P70" id="Content0_0_3" onchange="showSonValue('duo',0,0,3)" placeholder="please note"></label></div>
+						<div class="checkbox"><label><input id="mycheckbox7" type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix" name="duo_0" value="P26">Agent and distributor</label></div>
+						<div class="checkbox"><label><input id="mycheckbox8" type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix" name="duo_0" value="P35">Import & export</label></div>
+						<div class="checkbox"><label><input id="mycheckbox9" type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix" name="duo_0" value="P14">Research institute/ university</label></div>
+						<div class="checkbox"><label><input id="mycheckbox10" type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix" name="duo_0" value="P80">Industry association</label></div>
+						<div class="checkbox"><label><input type="checkbox"  data-shape="checkbox" data-text=""  class="redios checkbix"  group="qt" id="check0_5" class="idList_0" name="duo_0" value="P29">Others<input type="text" name="P29" id="Content0_5" onchange="showValue('duo',0,5)" placeholder="please note"></label></div> <label>2.Number of employee</label>
+						<input type="hidden" id="idList_1" value="b9233afc-b6e8-4150-b5cc-297a5b329460"><input type="hidden" id="IsRequired_1" value="yes"><input type="hidden" id="Alert_1" value="Pls fill in   Number of employee"><input type="hidden" id="QuestionType_1" value="dan">
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check1_0" checked="checked" name="dan_1" value="P9">less than 50</label></div>
+						<div class="radio"><label><input  type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check1_1" name="dan_1" value="P99">50-200人</label></div>
+						<div class="radio"><label><input  type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check1_2" name="dan_1" value="P30">more than 200</label></div> <label>3.Job category</label>
+						<input type="hidden" id="idList_2" value="80959436-69f0-46aa-9328-0e3e17d1e4c4"><input type="hidden" id="IsRequired_2" value="yes"><input type="hidden" id="Alert_2" value="Pls fill in Job category"><input type="hidden" id="QuestionType_2" value="dan">
+						<div class="radio"><label class="lab"><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix" id="check2_0"  checked="checked" name="dan_2" value="P13">Administration</label></div>
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check2_1" name="dan_2" value="P71">Purchasing</label></div>
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check2_2" name="dan_2" value="P12">Manufacturing</label></div>
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check2_3" name="dan_2" value="P90">Technician/ R&D</label></div>
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check2_4" name="dan_2" value="P32">Marketing</label></div>
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check2_5" name="dan_2" value="P7">Sales</label></div>
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  group="qt" id="check2_6" name="dan_2" value="P89">Others<input type="text" name="P89" id="Content2_6" onchange="showValue('dan',2,6)" placeholder="please note"></label></div> <label>4.Job position</label>
+						<input type="hidden" id="idList_3" value="5a2ef61f-7b6c-44d0-864d-e3351cbba09a"><input type="hidden" id="IsRequired_3" value="yes"><input type="hidden" id="Alert_3" value="Pls fill in Job position"><input type="hidden" id="QuestionType_3" value="dan">
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check3_0" checked="checked" name="dan_3" value="P23">Owner/ Member of the board</label></div>
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check3_1" name="dan_3" value="P46">Senior executive</label></div>
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check3_2" name="dan_3" value="P36">Mid-level management</label></div>
+						<div class="radio"><label><input type="radio"  data-shape="checkbox" data-text=""  class="redios checkbix"  id="check3_3" name="dan_3" value="P2">Staff</label></div> <label>5.Your Interest</label>
+						<input type="hidden" id="idList_4" value="1d2a3a49-cd41-41d2-b062-5e5cf47362a2"><input type="hidden" id="IsRequired_4" value="yes"><input type="hidden" id="Alert_4" value="Pls fill in Your Interest"><input type="hidden" id="QuestionType_4" value="duo">
+						<div class="checkbox"><label><input id="mycheckbox11" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" checked="checked" class="idList_4" name="duo_4" value="P56">Casting and automation-related equipment</label></div>
+						<div class="checkbox"><label><input  id="mycheckbox12" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P60">Casting material</label></div>
+						<div class="checkbox"><label><input id="mycheckbox13" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P74">Casting mold </label></div>
+						<div class="checkbox"><label><input id="mycheckbox14" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P96">Auxiliary casting material</label></div>
+						<div class="checkbox"><label><input id="mycheckbox15" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P27">Casting quality detection equipment</label></div>
+						<div class="checkbox"><label><input id="mycheckbox16" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P8">Computer-aided software</label></div>
+						<div class="checkbox"><label><input id="mycheckbox17" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P61">Casting post-processing equipment</label></div>
+						<div class="checkbox"><label><input id="mycheckbox18" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P84">Casting clearing equipment and tool</label></div>
+						<div class="checkbox"><label><input id="mycheckbox19" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P91">Cleaner production and waste disposal</label></div>
+						<div class="checkbox"><label><input id="mycheckbox20" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P82">Safe operation and environment</label></div>
+						<div class="checkbox"><label><input id="mycheckbox21" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" name="duo_4" value="P73">Metal casting</label></div>
+						<div class="checkbox"><label><input type="checkbox"  data-shape="checkbox" data-text=""  class="idList_4 checkbix" group="qt" id="check4_11" name="duo_4" value="P40">Other casting-related exhibits<input type="text" name="P40" id="Content4_11" onchange="showValue('duo',4,11)" placeholder="please note"></label></div> <label>6.Industry category</label>
+						<input type="hidden" id="idList_5" value="b48801df-84c3-4598-ad0a-3fa4c2306a87"><input type="hidden" id="IsRequired_5" value="yes"><input type="hidden" id="Alert_5" value="Pls fill in  Industry category"><input type="hidden" id="QuestionType_5" value="duo">
+						<div class="checkbox"><label><input id="mycheckbox22" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_5 checkbix" name="duo_5" value="P49">Automobiles</label></div>
+						<div class="checkbox"><label><input id="mycheckbox23" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_5 checkbix" name="duo_5" value="P55">Machine tools</label></div>
+						<div class="checkbox"><label><input id="mycheckbox24" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_5 checkbix" value="P11">Aerospace</label></div>
+						<div class="checkbox"><label><input id="mycheckbox25" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_5 checkbix" value="P72">Nuclear</label></div>
+						<div class="checkbox"><label><input id="mycheckbox26" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_5 checkbix" name="duo_5" value="P64">Rail transport</label></div>
+						<div class="checkbox"><label><input id="mycheckbox27" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_5 checkbix" name="duo_5" value="P78">Oceaneering</label></div>
+						<div class="checkbox"><label><input id="mycheckbox28" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_5 checkbix" name="duo_5" value="P93">Petrochemical industry</label></div>
+						<div class="checkbox"><label><input id="mycheckbox29" type="checkbox"  data-shape="checkbox" data-text=""  class="idList_5 checkbix" name="duo_5" value="P85">Shipping</label></div>
+						<div class="checkbox"><label><input type="checkbox"  data-shape="checkbox" data-text=""  class="idList_5 checkbix" group="qt" id="check5_8" class="idList_5" name="duo_5" value="P88">Others<input type="text" name="P88" id="Content5_8" onchange="showValue('duo',5,8)" placeholder="please note"></label></div> <label>7.Purpose of visit</label>
+						<input type="hidden" id="idList_6" value="41af2c28-fa37-4294-a0c1-a4ed2dd50f51"><input type="hidden" id="IsRequired_6" value="yes"><input type="hidden" id="Alert_6" value="Pls fill in Purpose of visit"><input type="hidden" id="QuestionType_6" value="duo">
+						<div class="checkbox"><label><input id="mycheckbox30" type="checkbox"  data-shape="checkbox" data-text="" class="idList_6 checkbix" name="duo_6" value="P15">Purchasing equipment/ castings</label></div>
+						<div class="checkbox"><label><input id="mycheckbox31" type="checkbox"  data-shape="checkbox" data-text="" class="idList_6 checkbix" name="duo_6" value="P59">Looking for partner</label></div>
+						<div class="checkbox"><label><input id="mycheckbox32" type="checkbox"  data-shape="checkbox" data-text="" class="idList_6 checkbix" name="duo_6" value="P47">Collecting industrial / product information</label></div>
+						<div class="checkbox"><label><input id="mycheckbox33" type="checkbox"  data-shape="checkbox" data-text="" class="idList_6 checkbix" name="duo_6" value="P68">Meeting with suppliers</label></div>
+						<div class="checkbox"><label><input id="mycheckbox34" type="checkbox"  data-shape="checkbox" data-text="" class="idList_6 checkbix" name="duo_6" value="P34">Market research</label></div>
+						<div class="checkbox"><label><input type="checkbox"  data-shape="checkbox" data-text="" class="idList_6 checkbix" group="qt" id="check6_5" name="duo_6" value="P42">Others<input type="text" name="P42" id="Content6_5" onchange="showValue('duo',6,5)" placeholder="please note"></label></div> <label>8.How do you know about CHINACAST</label>
+						<input type="hidden" id="idList_7" value="c1268bc8-98c4-45c9-b31f-6c32f8517d7e"><input type="hidden" id="IsRequired_7" value="yes"><input type="hidden" id="Alert_7" value="Pls fill in How do you know about CHINACAST"><input type="hidden" id="QuestionType_7" value="duo">
+						<div class="checkbox"><label><input id="mycheckbox44" type="checkbox"  data-shape="checkbox" data-text="" class="idList_7 checkbix" name="duo_7" value="P3">Direct mailing/ Invitation letter</label></div>
+						<div class="checkbox"><label><input id="mycheckbox35" type="checkbox"  data-shape="checkbox" data-text="" class="idList_7 checkbix" name="duo_7" value="P63">Internet</label></div>
+						<div class="checkbox"><label><input id="mycheckbox36" type="checkbox"  data-shape="checkbox" data-text="" class="idList_7 checkbix" name="duo_7" value="P69">Invitation from Exhibitor</label></div>
+						<div class="checkbox"><label><input id="mycheckbox37" type="checkbox"  data-shape="checkbox" data-text="" class="idList_7 checkbix" name="duo_7" value="P1">Recommendation from friends or colleagues</label></div>
+						<div class="checkbox"><label><input id="mycheckbox38" type="checkbox"  data-shape="checkbox" data-text="" class="idList_7 checkbix" name="duo_7" value="P58">Advertisement on professional media</label></div>
+						<div class="checkbox"><label><input type="checkbox"  data-shape="checkbox" data-text="" class="idList_7 checkbix" group="qt" id="check7_5" name="duo_7" value="P43">Others<input type="text" name="P43" id="Content7_5" onchange="showValue('duo',7,5)" placeholder="please note"></label></div> <label>9.I am interested in below accompanying programs</label>
+						<input type="hidden" id="idList_8" value="b0ef4046-fb9a-4680-bcbe-9add39f153dd"><input type="hidden" id="IsRequired_8" value="yes"><input type="hidden" id="Alert_8" value="Pls fill in I am interested in below accompanying programs”"><input type="hidden" id="QuestionType_8" value="duo">
+						<div class="checkbox"><label><input id="mycheckbox39" type="checkbox"  data-shape="checkbox" data-text="" class="idList_8 checkbix" name="duo_8" value="P18">Purchasing negotiation fair</label></div>
+						<div class="checkbox"><label><input id="mycheckbox40" type="checkbox"  data-shape="checkbox" data-text="" class="idList_8 checkbix" name="duo_8" value="P95">China Foundry Scientific and Technological Achievements Fair</label></div>
+						<div class="checkbox"><label><input id="mycheckbox41" type="checkbox"  data-shape="checkbox" data-text="" class="idList_8 checkbix" name="duo_8" value="P92">Foundry Innovative Products Presentation</label></div>
+						<div class="checkbox"><label><input id="mycheckbox42" type="checkbox"  data-shape="checkbox" data-text="" class="idList_8 checkbix" name="duo_8" value="P24">On-site expert service</label></div>
+						<div class="checkbox"><label><input id="mycheckbox43" type="checkbox"  data-shape="checkbox" data-text="" class="idList_8 checkbix" name="duo_8" value="P6">Management workshop</label></div>
+
+						<div class="group">
+							<button type="button" onclick="commit()" class="btn btn-info col-sm-12 col-xs-12" style="background:#ce2508;border:#ce2508;">Submit</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		</div>
+		<script type="text/javascript">
+			$('.top').css('visibility', 'visible')
+
+			$('.nav_toggle').on('click', function() {
+				$('body').addClass('sideopen')
+			})
+
+			$('.shadow').on('click', function() {
+				$('body').removeClass('sideopen')
+			})
+			$('.wap_nav>li').data('onoff', true)
+			$('.wap_nav>li').on('click', function() {
+				if($(this).data('onoff')) {
+					$(this).find('.deepnav').stop().slideDown()
+					$(this).siblings().find('.deepnav').stop().slideUp()
+					$(this).siblings().data('onoff', true)
+				} else {
+					$(this).find('.deepnav').stop().slideUp()
+				}
+				$(this).data('onoff', !$(this).data('onoff'))
+
+			})
+
+			$('.icon').click(function(e) {
+
+				var r = $(this).hasClass('active');
+				if(r) {
+					$(this).removeClass('active');
+					$('.search_form').removeClass('active');
+				} else {
+					$(this).addClass('active');
+					$('.search_form').addClass('active');
+				}
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$("[name=duo_01]").click(function() {
+					var chks = document.getElementsByName("duo_01");
+					var chkAll = document.getElementById("check0_01");
+					if(this.checked == false) {
+						var j = 1;
+						var x = 0;
+						for(var i = 0; i < chks.length; i++) {
+							if(chks[i].checked == false) {
+								x += 1;
+							}
+						}
+						if(x == chks.length) {
+							chkAll.checked = false;
+						}
+					} else {
+						chkAll.checked = true;
+					}
+
+					var chks = document.getElementById("check0_0_3");
+					if(chks.checked == true) {
+						chkAll.checked = true;
+					}
+				})
+			})
+
+			function showValue(obj, i, j) {
+				//$("#check" + i + "_" + j + "").attr("checked", "checked");
+				var ss = document.getElementById("check" + i + "_" + j + "");
+				var cc = $("#Content" + i + "_" + j).val();
+				if(cc == "") {
+					ss.checked = false;
+				} else {
+					ss.checked = true;
+				}
+				//if (ss.checked == false) {
+				//    ss.checked = false;
+				//    $(".idList_0").checked = true;
+				//} else {
+				// }
+				//ss.setAttribute("onclick", "return  false;");
+			}
+
+			function showSonValue(obj, i, j, g) {
+				var ss = document.getElementById("check" + i + "_" + j + "_" + g + "");
+				//var dd = document.getElementById("check0_01");
+				var chkAll = document.getElementById("check0_01");
+				var cc = $("#Content" + i + "_" + j + "_" + g).val();
+				if(cc == "") {
+					ss.checked = false;
+
+					var chks = document.getElementsByName("duo_01");
+
+					var j = 1;
+					var x = 0;
+					for(var i = 0; i < chks.length; i++) {
+						if(chks[i].checked == false) {
+							x += 1;
+						}
+					}
+					if(x == chks.length) {
+						chkAll.checked = false;
+					}
+				} else {
+					ss.checked = true;
+					chkAll.checked = true;
+				}
+				//$("#check" + i + "_" + j + "_"+g+"").attr("checked","checked");
+			}
+
+			function commit() {
+				var flag = true;
+				if($("#check0_0[class='idList_0']").is(':checked')) {
+					if($("[value='P57']").is(':checked')) {
+						flag = false;
+					}
+					if($("[value='P86']").is(':checked')) {
+						flag = false;
+					}
+					if($("[value='P39']").is(':checked')) {
+						flag = false;
+					}
+					if($("[value='P70']").is(':checked')) {
+						flag = false;
+					}
+				} else {
+					flag = false;
+				}
+				if(flag) {
+					alert("请填写制造与加工的下级!");
+					return;
+				}
+
+				var qtlist = $("[group='qt']");
+				for(var i = 0; i < qtlist.length; i++) {
+					if(qtlist[i].checked) {
+						var tsid = qtlist[i].id.substring(5);
+						var test = $("#Content" + tsid).val();
+						if(test == "") {
+							alert("Please Fill In The Blanks!");
+							$("#Content" + tsid).focus();
+							return;
+						} else {
+							continue;
+						}
+					} else {
+						continue;
+					}
+				}
+				var array = [];
+				var num = $("#hd_id").val();
+				for(var i = 0; i < num; i++) {
+					var isRequired = $("#IsRequired_" + i).val();
+					var questionType = $("#QuestionType_" + i).val();
+					var alertmessage = $("#Alert_" + i).val();
+					var info = $("#idList_" + i).val();
+					var _info = $(".idList_" + i);
+					if(isRequired == "yes") {
+						if(questionType == "dan") {
+							if($("input[name=dan_" + i + "]").is(':checked') == false) {
+								alert(alertmessage);
+								return;
+							}
+						} else if(questionType == "duo") {
+							if($("input[name=duo_" + i + "]").is(':checked') == false) {
+								alert(alertmessage);
+								return;
+							}
+						}
+					} else {
+						if(questionType == "dan") {
+							if($("input[name=dan_" + i + "]").is(':checked') == false) {
+								break;
+							}
+						} else if(questionType == "duo") {
+							if($("input[name=duo_" + i + "]").is(':checked') == false) {
+								break;
+							}
+						}
+					}
+					var jsonObj = "[]";
+					$(_info).each(function(j) {
+						if(this.type == "checkbox") {
+							if(this.checked == true) {
+								jsonObj += "{\"QuestionInfoId\":\"" + info + "\",\"QuestionResultId\":\"" + this.value + "\",\"Result\":\"" + $("#Title_" + i + "_" + j).val() + "\",\"QuestionType\":\"" + $("#QuestionType_" + i).val() + "\"},";
+							}
+						} else if(this.type == "radio") {
+							if(this.checked == true) {
+								jsonObj += "{\"QuestionInfoId\":\"" + info + "\",\"QuestionResultId\":\"" + this.value + "\",\"Result\":\"" + $("#Title_" + i + "_" + j).val() + "\",\"QuestionType\":\"" + $("#QuestionType_" + i).val() + "\"}";
+							}
+						}
+						if(questionType == "duoxuan" && j == _info.length - 1) {
+							jsonObj = jsonObj.substr(0, jsonObj.length - 1);
+						}
+					});
+					if(_info.length == 0) {
+						if($("#txtName_" + i).val() != "") {
+							jsonObj += "{\"QuestionInfoId\":\"" + info + "\",\"Result\":\"" + $("#txtName_" + i).val() + "\",\"QuestionType\":\"" + $("#QuestionType_" + i).val() + "\"}";
+						}
+					}
+					jsonObj += "]";
+					array.push(jsonObj);
+				}
+				$.ajax({
+					type: "post",
+					traditional: true,
+					url: "/QuestionSurveyGZ/SaveResult",
+					data: $("#questionform").serialize(),
+					success: function(data) {
+						if(data == "1") {
+							location.href = "/BasicInfo/Confirmation";
+						} else if(data == "2") {
+							alert("提交失败，请联系管理员！");
+						} else {
+							location.href = "/BasicInfo/Confirmation";
+						}
+					}
+				});
+			}
+		</script>
+
+		</div>
+		</div>
+
+		<script src="js/required.js"></script>
+		<script type="text/javascript">
+			//			jQuery(document).ready(function() {
+			//				jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
+			//
+			//			});
+
+			$(function() {
+				//顶部导航切换
+				//$("#demo-list li").click(function () {
+				//    $("#demo-list li.active").removeClass("active")
+				//    $(this).addClass("active");
+				//})
+				var num = $("#menunum").val();
+				$("#demo-list li[num='" + num + "']").addClass("active");
+			})
+
+			function openwindow(obj) {
+				window.open(obj);
+			}
+		</script>
+		<script>
+			layui.use('form', function() {
+				$("#txtProvince").css("display", "none")
+				var form = layui.form;
+				form.on('select(brickType)', function(data) {
+					var val = data.value;
+					console.info(val);
+
+				});
+
+				form.on('submit(formDemo)', function(data) {
+					form.render('select');
+					layer.msg(JSON.stringify(data.field));
+					return false;
+				});
+				form.on('select(search_type)', function(data) {
+
+					$txt = parseFloat($("#country").children("option:selected").val())
+					$("[group='gjbm']").val($txt)
+					if($txt == 86) {
+						$("#txtProvince").attr("disabled", "disabled");
+						$("#txtProvince").css("display", "none");
+						$("#xlkProvince").removeAttr("disabled");
+						$("#xlkProvince").css("display", "block");
+						$(".layui-disabled").css("display", "none")
+						$("#txtProvince").css("display", "none")
+						$(".navs input").css("display", "none")
+					} else {
+						$(".navs input").css("display", "none")
+						$("#txtProvince").css("display", "block")
+						$("#txtProvince").removeAttr("disabled");
+						$("#xlkProvince").css("display", "none");
+						$("#txtProvince").val("");
+					}
+				});
+
+			});
+		</script>
+		<script>
+			Checkbix.init();
+		</script>
+
+	</body>
+
+</html>

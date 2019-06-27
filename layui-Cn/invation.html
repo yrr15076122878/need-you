@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="layui/css/layui.mobile.css" />
+		<link rel="stylesheet" href="css/nav.css"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/jquery-accordion-menu.css" rel="stylesheet" />
+		<link href="css/font-awesome.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/Part.css"/>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="layui/layui.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>2019中国铸造展览会 | CHINA CAST 2019</title>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default hidden-md hidden-lg" style="background: transparent; position: fixed; width: 100%; z-index: 100; border-bottom: none; border-right: none; box-shadow: none">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header" style="background-color: #fff; border-bottom: 1px solid #ccc;">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<a class="navbar-brand" href="#">导航栏</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border-bottom: none;">
+					<ul class="nav navbar-nav" style="width: 220px; background-color: #fff; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+						<li class='active'>
+							<a href='Padmin.aspx'><i class='fa fa-th-list'></i>基本信息</a>
+						</li>
+						<li>
+							<a href='Fees.aspx'><i class='fa fa-file-text-o'></i>门票选项</a>
+						</li>
+						<li>
+							<a href='Payment.aspx'><i class='fa fa-credit-card'></i>付款</a>
+						</li>
+						<li>
+							<a href='confirmation.html'><i class='fa fa-envelope'></i>确认函</a>
+						</li>
+						<li>
+							<a href='Hotel.aspx'><i class='fa fa-glass'></i>酒店预订</a>
+						</li>
+						<li>
+							<a href='Agenda.aspx'><i class='fa fa-th'></i>会议日程</a>
+						</li>
+						<li>
+							<a href='Contactus.aspx'><i class='fa fa-stack-exchange'></i>联系我们</a>
+						</li>
+						<li>
+							<a href='Logout.aspx'><i class='fa fa-reply'></i>账号退出</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--BannerImage-->
+		<div class="banner-images container" style="padding:0 0">
+			<img src="images/banners.jpg" alt="..." class="img-responsive center-block" style="border: 1px solid #ccc;" />
+		</div>
+		<!--Main-->
+		<!--pc侧边导航栏-->
+		<div class="layui-container container right-main mainBody" style="border: 1px solid #ccc;overflow: hidden;">
+			<!--PC Menu-->
+			<div id="jquery-accordion-menu" class="jquery-accordion-menu red col-md-3 hidden-xs hidden-sm" style="margin-top:15px;">
+				<div class="jquery-accordion-menu-header" id="form">
+					<h3 style="margin:10%">导航栏</h3>
+				</div>
+				<ul id="demo-list">
+					<li num="1" class="active">
+						<a href="invation.html"><i class="layui-icon icon-inneed"></i> 基本信息</a>
+					</li>
+					<li num="2">
+						<a href="investigation1.html"><i class="layui-icon icon-inneed"></i> 问卷调查</a>
+					</li>
+					<li num="3">
+						<a href="confirmation.html"><i class="layui-icon icon-inneed">&#xe655;</i> 确认函</a>
+					</li>
+					<li num="4">
+						<a href=""><i class="layui-icon icon-inneed"></i> 帮同事注册</a>
+					</li>
+					<li num="5">
+						<a href="invat.html"><i class="layui-icon icon-inneed"></i> 邀请同行</a>
+					</li>
+					<li num="6">
+						<a href=""><i class="layui-icon icon-inneed"></i> 展品/展品预览</a>
+					</li>
+					<li num="7">
+						<a href=""><i class="layui-icon icon-inneed"></i> 联系我们</a>
+					</li>
+					<li>
+						<a href=""><i class="layui-icon icon-inneed"></i> 账号退出</a>
+					</li>
+				</ul>
+				<div class="jquery-accordion-menu-footer">&nbsp;</div>
+			</div>
+			<div class="layui-col-md9 foot" style="margin-left: 0px;margin-top: 2%;">
+				<div class="col-md-12 body_t" style="border-left: 1px solid #ccc; margin-top: 17px;">
+
+					<div class="group">
+						<form class="layui-form" action="">
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label" algin="right">
+									<span>称呼<span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span></span>
+								</lable>
+								<div class="layui-input-block">
+									<select name="interest" lay-filter="aihao" style="z-index: 99999;" lay-verify="required" readonly>
+										<option value="" readonly="" class="layui-unselect">请选择</option>
+										<option value="1">先生</option>
+										<option value="2">女士</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>姓名</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<input type="tel" name="UserMob" id="" value="" class="input pad layui-col-md12	layui-unselect" placeholder="请输入姓名" lay-verify="required">
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>公司<span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span></span>
+								</lable>
+								<div class="layui-input-block">
+									<input type="tel" name="UserMob" id="" value="" class="input layui-col-md12	layui-unselect" placeholder="请输入公司名" lay-verify="required">
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>职位</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<input type="tel" name="UserMob" id="" value="" class="input layui-col-md12	layui-unselect" placeholder="请输入职位" lay-verify="required">
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>部门</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<input type="tel" name="UserMob" id="" value="" class="input layui-col-md12	layui-unselect" placeholder="请输入部门" lay-verify="required">
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>公司名称</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<input type="tel" name="UserMob" id="" value="" class="input layui-col-md12	layui-unselect" placeholder="请输入公司名称" lay-verify="required">
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>地址</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<input type="tel" name="UserMob" id="" value="" class="input layui-col-md12	layui-unselect" placeholder="请输入地址" lay-verify="required">
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>国家/地区</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<select name="interest" lay-filter="aihao" style="z-index: 99999;" lay-verify="required" readonly>
+										<option value="" class="layui-unselect">请选择</option>
+										<option value="1">先生</option>
+										<option value="2">女士</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>省份</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<select name="interest" lay-filter="aihao" style="z-index: 99999;" lay-verify="required" readonly>
+										<option value="" class="layui-unselect">请选择</option>
+										<option value="1">先生</option>
+										<option value="2">女士</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>城市</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<select name="interest" lay-filter="aihao" style="z-index: 99999;" lay-verify="required" readonly>
+										<option value="" class="layui-unselect">请选择</option>
+										<option value="1">先生</option>
+										<option value="2">女士</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>手机</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<input type="tel" name="UserMob" id="" value="" class="input layui-col-md12	layui-unselect" placeholder="请输入手机号码" lay-verify="username|phone|number" lay-verify="required">
+								</div>
+							</div>
+							<div class="form-group" style="overflow: hidden;">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>电话</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-col-md10 four-input">
+									<input type="tel" class="input layui-col-md3 layui-unselect" alert-text="请输入" placeholder="国家编码">
+									<input type="tel" class="input layui-col-md3 layui-unselect" alert-text="请输入" placeholder="地区编码 ">
+									<input type="tel" class="input layui-col-md2 layui-unselect" alert-text="请输入" placeholder="电话号码">
+									<input type="tel" class="input layui-col-md2 layui-unselect" alert-text="请输入" placeholder="分机号码">
+								</div>
+							</div>
+							<div class="form-group" style="overflow: hidden;">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>传真</span><span style="color: red;vertical-align:middle;margin: 0px 5px;"></span>
+								</lable>
+								<div class="layui-col-md10 three-input">
+									<input type="tel" class="input layui-col-md3 layui-unselect" alert-text="请输入国家编码"  group="gjbm"  onblur="texttrimcheck(this)" name="czgjbm" onkeyup="this.value=this.value.replace(/\D/g,'')"  id="czgjbm" placeholder="国家编码" oninvalid="setCustomValidity('请输入国家编码！');" oninput="setCustomValidity('');">
+									<input type="tel" class="input layui-col-md3 layui-unselect" alert-text="请输入地区编码" name="czdqbm" onblur="texttrimcheck(this)" onkeyup="this.value=this.value.replace(/\D/g,'')"  id="czdqbm" placeholder="地区编码" oninvalid="setCustomValidity('请输入地区编码！');" oninput="setCustomValidity('');">
+									<input type="tel" class="input layui-col-md5 layui-unselect" alert-text="请输入传真号码" id="czhm" onkeyup="this.value=this.value.replace(/\D/g,'')" onblur="texttrimcheck(this)" name="Fax" placeholder="传真号码" oninvalid="setCustomValidity('请输入传真号码！');" oninput="setCustomValidity('');">
+								</div>
+							</div>
+							
+							<div class="form-group layui-form-item">
+								<lable class="layui-form-label lable-tit  control-label">
+									<span>电子邮箱</span><span style="color: red;vertical-align:middle;margin: 0px 5px;">*</span>
+								</lable>
+								<div class="layui-input-block">
+									<input type="tel" name="UserMob" id="" value="" class="input layui-col-md12	layui-unselect" placeholder="请输入电子邮箱" lay-verify="username|email" lay-verify="required">
+								</div>
+							</div>
+							<div class="layui-form-item" pane>
+								<label class="layui-form-label">复选框</label>
+								<div class="layui-input-block">
+									<input type="checkbox" title="复选1" lay-filter="choiceOne" name="param[]" lay-verify="required">
+									<input type="checkbox" title="复选2" lay-filter="choiceOne" name="param[]" lay-verify="required">
+									<input type="checkbox" title="复选3" lay-filter="choiceOne" name="param[]" lay-verify="required">
+								</div>
+							</div>
+							<div class="layui-form-item layui-col-md12" pane>
+								<div class="layui-input-block layui-col-md12">
+									<button class="layui-btn layui-col-md4 btns" lay-submit lay-filter="formDemo" style="text-align: center;margin: ;">立即提交</button>
+									<!--<button type="reset" class="layui-btn layui-btn-primary">重置</button>-->
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		</div>
+		<!--layui验证依赖板块-->
+		<script>
+			//注意：导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function() {
+				var element = layui.element;
+			});
+		</script>
+		<script>
+			layui.use('form', function() {
+				var form = layui.form;
+
+				form.on('checkbox(choiceOne)', function(data) {
+					console.debug(data);
+					var len = $("input:checked").length;
+					if(len < 1) {
+						$(data.elem).next().attr("class", "layui-unselect layui-form-checkbox");
+						$(data.elem).prop("checked", false);
+						layer.msg('请至少选择一项！', {
+							icon: 5
+						});
+						return false;
+					}
+				});
+
+				form.on('submit(formDemo)', function(data) {
+
+					var len = $("input:checked").length;
+					if(len < 1) {
+						layer.msg('请至少选择一项复选框！', {
+							icon: 2
+						});
+					}
+					return false;
+				});
+			});
+		</script>
+	</body>
+
+</html>

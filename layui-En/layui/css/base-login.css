@@ -1,0 +1,211 @@
+
+.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9 {
+	padding: 0
+}
+
+.img-thumbnail {
+	box-shadow: 0px 2px 2px;
+	padding: 0;
+	border: 0;
+	border-radius: 0
+}
+
+.Modal_box {
+	width: 440px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	border-radius: 6px;
+	border: 1px solid rgba(0,0,0,0.2);
+	background-color: #fff;
+	position: absolute;
+	padding: 10px 8px;
+	top: 10%;
+	left: 39%
+}
+
+.Modal_box p {
+	color: #5B5D60;
+	padding: 8px 15px;
+	font-size: 1.2em;
+	font-weight: bold
+}
+
+.Modal_box span {
+	display: block;
+	width: 100%;
+	line-height: 70%;
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 20px 15px 30px 15px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 10px
+}
+
+.Modal_box input {
+	padding: 5px 10px;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+	background-color: #286090;
+	border-color: #204d74;
+	border-radius: 4px
+}
+
+@media screen and (max-width:1366px) {
+	.Modal_box {
+		left: 34%;
+		max-width: 80%
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.Modal_box {
+		left: 28%;
+		max-width: 80%
+	}
+}
+
+@media screen and (max-width:768px) {
+	.login-html {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 10%;
+		padding-right: 10%
+	}
+
+	.Modal_box {
+		left: 20%;
+		max-width: 80%
+	}
+}
+
+@media screen and (max-width:680px) {
+	.login-html {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 10%;
+		padding-right: 10%
+	}
+
+	.Modal_box {
+		left: 15%;
+		max-width: 80%
+	}
+}
+
+@media screen and (max-width:420px) {
+	.login-html {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 10%;
+		padding-right: 10%
+	}
+
+	.Modal_box {
+		left: 10%;
+		max-width: 80%
+	}
+}
+
+@media screen and (max-width:380px) {
+	.login-html {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 5%;
+		padding-right: 15%
+	}
+
+	.Modal_box {
+		left: 10%;
+		max-width: 80%
+	}
+}
+
+@media screen and (max-width:320px) {
+	.login-html {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 2%;
+		padding-right: 25%
+	}
+
+	.Modal_box {
+		left: 10%;
+		max-width: 80%
+	}
+}
+
+@media screen and (device-width:995px) {
+ 
+	/*.login-wrap {
+		padding-top: 38%;
+	}
+	*/
+	.login_top {
+		margin-top:10px;
+	
+	}	
+}
+.login_in {
+	border:1px solid #fff;
+	height:auto;
+	background-color:#fff;
+	margin-top:30px;
+	margin-bottom:65px;
+	box-shadow: 0px 4px 4px;
+}
+
+
+.checked_in {
+	border-top:4px solid #ba2207;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	border-bottom:1px solid #fff;
+	background-color:#fff;
+	height:auto;
+	padding:20px;
+	text-align:center;
+	font-family:"΢���ź�";
+	font-size:18px;
+	font-weight: 500;
+	cursor: default;
+}
+.unchecked_in {
+	border-top:4px solid f1f1f1;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color:#f1f1f1;
+	height:auto;
+	padding:20px;
+	//box-shadow:0px 1.5px 1px;
+	text-align:center;
+	font-family:"΢���ź�";
+	font-size:18px;
+	font-weight: 500;
+	
+}
+a:hover, a:visited, a:link, a:active {
+    color:#000;
+}
+
+.font_style_z {
+	font-size:16px;
+	font-weight:500;
+	color:#000;
+
+}
+
+
+.triangle_border_up {
+	display:block;
+    width:0;
+    height:0;
+	margin-left: 5%;
+    border-width:0 28px 28px;
+    border-style:solid;
+    border-color:transparent transparent #ccc;/*͸�� ͸��  #ce2508*/
+    top:0px;
+    left:0px;
+}

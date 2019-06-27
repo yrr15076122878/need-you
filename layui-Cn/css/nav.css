@@ -1,0 +1,328 @@
+/*媒体查询*/
+
+@media screen and (max-width: 770px) {
+	.layui-container {
+		padding: 0px;
+	}
+	.foot {
+		margin-top: 6%;
+		margin-left: 0px !important;
+		border-left: 0px;
+	}
+	.btns {
+		margin-left: 20%;
+	}
+	.layui-input-block {
+		margin-left: 6%;
+		margin-right: 6%;
+		min-height: 36px;
+	}
+	.layui-form-label {
+		float: none;
+		width: 100%;
+	}
+	.layui-form-label {
+		text-align: left !important;
+		margin-left: 1.5%;
+	}
+	.layui-select-title>input {
+		margin-left: 0px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.layui-nav-tree {
+		width: 230px;
+	}
+	.btns {
+		margin-left: 24%;
+	}
+	.layui-form-label {
+		padding: 9px 0px !important;
+	}
+	.layui-input-block {
+		margin-left: 96px !important;
+	}
+}
+
+.images {
+	width: auto;
+	height: auto;
+	max-height: 100%;
+	max-width: 100%;
+	border: 1px solid #CCCCCC;
+	box-sizing: border-box;
+	/*margin-bottom: 20px;*/
+}
+
+.interested {
+	width: 100%;
+	font-size: 13px;
+	border-collapse: collapse;
+}
+
+.interested th {
+	text-align: center;
+}
+
+.interested th,
+.interested td {
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+#print-sub {
+	width: 100%;
+	margin: 0 auto 20px 0;
+	cursor: pointer;
+	border: 1px solid transparent;
+	padding: 10px;
+	border-radius: 4px;
+	outline: none;
+	background: #db4208;
+	color: #fff;
+}
+
+.layui-row {
+	border: 1px solid #CCCCCC;
+	padding: 20px 15px;
+	margin-bottom: 20px;
+}
+
+.layui-input-block>input {
+	padding-left: 10px;
+	height: 36px;
+}
+
+.layui-container-in {
+	background: #DD3E07;
+}
+
+.foot {
+	margin-left: 60px;
+	/*border-left: 1px solid #CCCCCC;*/
+}
+
+.layui-input-block>input {
+	border: 1px solid #eee;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.layui-nav-tree>li>h3 {
+	font-size: 24px;
+}
+
+
+/*控制导航栏图片居中*/
+
+.layui-nav-img {
+	vertical-align: middle !important;
+}
+
+img {
+	vertical-align: middle !important;
+}
+
+
+/*让容器百分百布局  class="layui-fluid"*/
+
+
+/*控制点选状态下导航栏的背景色*/
+
+.layui-nav-tree .layui-nav-child dd.layui-this,
+.layui-nav-tree .layui-nav-child dd.layui-this a,
+.layui-nav-tree .layui-this,
+.layui-nav-tree .layui-this>a,
+.layui-nav-tree .layui-this>a:hover {
+	background: #CE2508;
+}
+
+
+/*控制左边框的颜色*/
+
+.layui-nav-tree .layui-nav-bar {
+	background: deepskyblue;
+}
+
+.layui-nav-tree .layui-nav-item a:hover {
+	background: #CE2508;
+}
+
+.layui-nav {
+	background: #DD3E07;
+}
+
+.layui-nav-tree>li>h3 {
+	color: white;
+	font-size: 18px;
+	margin: 0px 10px;
+}
+
+.layui-nav .layui-nav-item a {
+	color: white !important;
+}
+
+.layui-icon {
+	padding-right: 4px;
+}
+
+
+/*邀请同行*/
+
+@media (min-width: 1200px) {
+	#mpanel4 {
+		left: 20%;
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 758px) {
+	#mpanel4 {
+		overflow: hidden;
+		top: 6%;
+		width: 100%;
+	}
+}
+
+
+/*邀请函页面发送邀请按钮*/
+
+.layui-btn-disabled {
+	background: #DC6E5C !important;
+	color: white;
+}
+
+.layui-btn-disabled:hover {
+	background: #ce2508;
+	color: white;
+}
+
+.layui-btn {
+	background: #ce2508;
+}
+
+
+/*pc端导航*/
+
+.icon-in {
+	font-size: 24px !important;
+	color: white;
+	vertical-align: middle;
+	margin-right: 2%;
+}
+
+
+/*移动端icon*/
+
+.icon-inne {
+	font-size: 24px;
+	color: #777;
+	vertical-align: middle;
+}
+
+
+/*pc端icon*/
+
+.icon-inneed {
+	font-size: 20px;
+	color: white;
+	vertical-align: middle;
+}
+
+.layui-ul {
+	background: none;
+}
+
+.layui-nav-tree .layui-nav-item a {
+	color: #777 !important;
+}
+
+.container>.navbar-header,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container-fluid>.navbar-collapse {
+	margin-left: -29px;
+}
+
+.layui-nav .layui-nav-item a {
+	padding-left: 0px;
+}
+
+
+/*logo图*/
+
+.banner-img {
+	width: 160px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+
+/*预登记按钮*/
+
+.td-in {
+	background: #db4208;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.4em;
+}
+
+
+/*针对导航写的*/
+.inside_content{
+	padding: 0px !important;
+}
+.a-b-link {
+	position: fixed;
+	z-index: -1;
+	top: -500px;
+}
+
+.w-a {
+	font-size: 22px;
+	color: #333;
+	line-height: 40px;
+	margin-right: 30px;
+}
+
+.modal-size {
+	width: 60%;
+	height: 60%;
+}
+
+@media screen and (max-width: 1350px) {
+	.top-active {
+		width: 100% !important;
+		position: fixed;
+		left: 0;
+		top: 25px;
+		z-index: 3;
+		visibility: hidden;
+		background: url(../images/index_bg_nav.png) no-repeat;
+		background-size: cover;
+	}
+	.cebian {
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.bread .bread_wrap,
+	.inside_content {
+		width: 100% !important;
+	}
+	.container {
+		margin: 0;
+		padding: 0 !important;
+	}
+}
+
+.inside_content {
+	padding: 0px !important;
+}
+
+#printReady {
+	padding: 0px 40px;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="layui/css/layui.mobile.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/jquery-accordion-menu.css" rel="stylesheet" />
+		<link href="css/font-awesome.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="layui/layui.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/verify.css"/>
+		<link href="css/jquery-accordion-menu.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/Part.css"/>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/verify.js"></script>
+		<title>确认函</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default hidden-md hidden-lg" style="background: transparent; position: fixed; width: 100%; z-index: 100; border-bottom: none; border-right: none; box-shadow: none">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header" style="background-color: #fff; border-bottom: 1px solid #ccc;">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<a class="navbar-brand" href="#">导航栏</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border-bottom: none;">
+					<ul class="nav navbar-nav" style="width: 220px; background-color: #fff; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+						<li>
+							<a href='Padmin.aspx'><i class='fa fa-th-list'></i>基本信息</a>
+						</li>
+						<li>
+							<a href='Fees.aspx'><i class='fa fa-file-text-o'></i>门票选项</a>
+						</li>
+						<li>
+							<a href='Payment.aspx'><i class='fa fa-credit-card'></i>付款</a>
+						</li>
+						<li>
+							<a href='confirmation.html'><i class='fa fa-envelope'></i>确认函</a>
+						</li>
+						<li>
+							<a href='Hotel.aspx'><i class='fa fa-glass'></i>酒店预订</a>
+						</li>
+						<li>
+							<a href='Agenda.aspx'><i class='fa fa-th'></i>会议日程</a>
+						</li>
+						<li>
+							<a href='Contactus.aspx'><i class='fa fa-stack-exchange'></i>联系我们</a>
+						</li>
+						<li>
+							<a href='Logout.aspx'><i class='fa fa-reply'></i>账号退出</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--BannerImage-->
+		<div class="banner-images container" style="padding:0 0">
+			<img src="images/banners.jpg" alt="..." class="img-responsive center-block" style="border: 1px solid #ccc;" />
+		</div>
+		<!--Main-->
+		<!--pc侧边导航栏-->
+		<div class="layui-container container right-main mainBody" style="border: 1px solid #ccc;overflow: hidden;">
+			<!--PC Menu-->
+			<div id="jquery-accordion-menu" class="jquery-accordion-menu red col-md-3 hidden-xs hidden-sm" style="margin-top:15px;">
+				<div class="jquery-accordion-menu-header" id="form">
+					<h3 style="margin:10%">导航栏</h3>
+				</div>
+				<ul id="demo-list">
+					<li num="1">
+						<a href="invation.html"><i class="layui-icon icon-inneed"></i> 基本信息</a>
+					</li>
+					<li num="2">
+						<a href="investigation1.html"><i class="layui-icon icon-inneed"></i> 问卷调查</a>
+					</li>
+					<li num="3">
+						<a href="confirmation.html"><i class="layui-icon icon-inneed">&#xe655;</i> 确认函</a>
+					</li>
+					<li num="4">
+						<a href=""><i class="layui-icon icon-inneed"></i> 帮同事注册</a>
+					</li>
+					<li num="5">
+						<a href="invat.html"><i class="layui-icon icon-inneed"></i> 邀请同行</a>
+					</li>
+					<li num="6">
+						<a href=""><i class="layui-icon icon-inneed"></i> 展品/展品预览</a>
+					</li>
+					<li num="7">
+						<a href=""><i class="layui-icon icon-inneed"></i> 联系我们</a>
+					</li>
+					<li>
+						<a href=""><i class="layui-icon icon-inneed"></i> 账号退出</a>
+					</li>
+				</ul>
+				<div class="jquery-accordion-menu-footer">&nbsp;</div>
+			</div>
+			<div class="layui-col-md9 foot" style="margin-left: 0px;margin-top: 2%;">
+				<div class="col-md-12 body_t" style="border-left: 1px solid #ccc; margin-top: 17px;">
+
+						<input type="hidden" value="5" id="menunum">
+
+						<h3 class="auto-centerh3"><strong>邀请同行</strong></h3>
+
+						<form action="/BasicInfo/InvitePeers" class="form-horizontal" method="post">
+							<div class="clearfix"></div>
+							<div class="panel panel-default">
+								<div class="panel-body">
+									邀请同行
+								</div>
+								<div class="panel-footer layui-form">
+
+									<div class="form-group layui-form-item">
+										<label for="inputFamily" class="col-sm-2 control-label">姓名</label>
+										<div class="col-sm-10">
+											<input class="input-validation-error form-control requiredTest " data-val="true" data-val-required="请输入姓名" id="UserName" name="UserName" type="text" value="" lay-verify="required">
+											<!--<span class="field-validation-error" data-valmsg-for="UserName" data-valmsg-replace="true">请输入姓名</span>-->
+										</div>
+									</div>
+									<div class="form-group layui-form-item">
+										<label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+										<div class="col-sm-10">
+											<input class="input-validation-error form-control" data-val="true" data-val-required="请输入邮箱" id="Email" name="Email" lay-verify="required|username|email" type="text" value="">
+											<!--<span class="field-validation-error" data-valmsg-for="Email" data-valmsg-replace="true">请输入邮箱</span>-->
+										</div>
+									</div>
+									<div class="form-group" style="margin: auto;text-align: center;">
+										<div class="col-sm-10">
+											<div id="mpanel4" style="position: relative;">
+												
+											</div>
+										</div>
+									</div>
+									<hr>
+									<style>
+										.layui-btn-disabled {
+											background: #DC6E5C !important;
+											color: white;
+										}
+										
+										.layui-btn-disabled:hover {
+											background: #ce2508;
+											color: white;
+										}
+										
+										.layui-btn {
+											background: #ce2508;
+										}
+									</style>
+									<div class="group">
+										<button class="layui-btn layui-col-md8 layui-col-xs8 btns layui-btn-disabled" lay-submit="" lay-filter="formDemo" style="text-align: center;margin: ;">立即提交</button>
+
+									</div>
+
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</form>
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								同行列表
+							</div>
+							<div class="panel-footer">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<td>姓名</td>
+											<td>邮箱</td>
+											<td>是否完成注册</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>lyj</td>
+											<td>1406341775@qq.com</td>
+											<td>
+												<span>未注册</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+
+			<!--layui验证依赖板块-->
+		<script>
+			//注意：导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function() {
+				var element = layui.element;
+			});
+			layui.use('element',function(){
+				var elemetn = layui.element;
+			})
+		</script>
+		<script>
+			layui.use('form', function() {
+				var form = layui.form;
+				
+				form.on('checkbox(choiceOne)',function(data){
+					console.debug(data);
+					var len = $("input:checked").length;
+					if(len < 1) {
+						$(data.elem).next().attr("class", "layui-unselect layui-form-checkbox");
+						$(data.elem).prop("checked", false);
+						layer.msg('请至少选择一项！', {
+							icon: 5
+						});
+						return false;
+					}
+				});
+
+				
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				var num = $("#menunum").val();
+				$("#demo-list li[num='" + num + "']").addClass("active");
+			})
+
+			function openwindow(obj) {
+				window.open(obj);
+			}
+		</script>
+		<script>
+			//拖拽验证部分
+			$('#mpanel4').slideVerify({
+				type: 2, //类型
+				vOffset: 5, //误差量，根据需求自行调整
+				vSpace: 5, //间隔
+				imgName: ['regbanner1.jpg', '2.jpg'],
+				imgSize: {
+					width: '100%',
+					height: '100px',
+				},
+				blockSize: {
+					width: '40px',
+					height: '40px',
+				},
+				barSize: {
+					width: '100%',
+					height: '40px',
+				},
+				ready: function() {},
+				success: function() {
+					//......后续操作
+					$(".group button").removeClass("layui-btn-disabled");
+				},
+				error: function() {
+					alert('验证失败');
+					return false;
+				}
+
+			});
+		</script>
+	</body>
+
+</html>
